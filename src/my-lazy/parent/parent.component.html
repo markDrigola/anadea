@@ -1,0 +1,11 @@
+<p>
+  parent works!
+</p>
+<ul>
+  <li *ngFor="let id of ids">
+    <a [routerLink]="['/lazy', id]">id</a>
+  </li>
+</ul>
+<a [routerLink]="['/lazy/child-2']">Child - 2 </a>
+
+<router-outlet></router-outlet>

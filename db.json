@@ -1,0 +1,31 @@
+{
+  "storage": [
+    {
+      "id": 1,
+      "data": "bla - bla - bla",
+      "title": "Lorem ipsum dollar"
+    },
+    {
+      "id": 3,
+      "data": "blalala",
+      "title": "Lorem ipsum dollar"
+    },
+    {
+      "id": 4,
+      "errors": [
+        {
+          "code": 2,
+          "message": "Invalid request.",
+          "additional_data": {
+            "reason": "Command not found."
+          }
+        }
+      ]
+    }
+  ],
+  "getTest": [
+    {
+      "id": 1
+    }
+  ]
+}

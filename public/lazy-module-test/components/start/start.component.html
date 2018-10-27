@@ -1,0 +1,9 @@
+<p>
+    im lazy test home component
+</p>
+<ul>
+    <li *ngFor="let id of ids">
+        <a [routerLink]="['/lazy-module/tests']">{{ id }}</a>
+    </li>
+</ul>
+<router-outlet></router-outlet>

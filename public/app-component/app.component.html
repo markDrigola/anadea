@@ -1,0 +1,23 @@
+<h1>Hello starter</h1>
+{{testMessage}}
+<input type="text" [(ngModel)]="testMessage">
+<button (click)="errorThrow()">Error throw</button>
+<br>
+<button routerLink="/test">Test component</button>
+<br>
+<button routerLink="/start">Start component</button>
+<br>
+<button routerLink="/">Home component</button>
+<br>
+<button routerLink="/new-test">TEST MODULE</button>
+<br>
+<button routerLink="/lazy">LAZY TEST MODULE</button>
+
+
+
+<router-outlet name="myOutlet"></router-outlet>
+<router-outlet></router-outlet>
+
+
+<button (click)="getStorageData()">getStorageData</button>
+<button (click)="getSyncTest()">getSyncTest</button>

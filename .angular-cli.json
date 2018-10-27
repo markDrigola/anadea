@@ -1,0 +1,62 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "file-structure-new"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+          { "glob": "**/*", "input": "../public/assets", "output": "./public/assets", "allowOutsideOutDir": true },
+          { "glob": "favicon.ico", "input": "../public/assets", "output": "./public/assets", "allowOutsideOutDir": true }
+      ],
+      "index": "index.html",
+      "main": "../main.ts",
+      "polyfills": "../data/polyfills.ts",
+      "test": "../misc/tests/test.ts",
+      "tsconfig": "../data/type_script/config.json",
+      "testTsconfig": "../data/type_script/config.spec.json",
+      "prefix": "app",
+      "styles": [
+          "../public/styles.css"
+      ],
+      "scripts": [
+
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "../data/type_script/config.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "../data/type_script/config.spec.json",
+      "exclude": "**/node_modules/**"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json",
+      "exclude": "**/node_modules/**"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./misc/tests/karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}
